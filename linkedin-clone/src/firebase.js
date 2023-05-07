@@ -1,4 +1,6 @@
-import firebase from 'firebase'
+import firebase from 'firebase';
+
+
 
 
 const firebaseConfig = {
@@ -11,6 +13,11 @@ const firebaseConfig = {
   measurementId: "G-HKWX6LER9L"
 };
 
-const firebaseApp = firebase.initialiseApp(firebaseConfig);
+// Use this to initialize the firebase App
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+// Use these for db & auth
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
+
+export { auth, db };
