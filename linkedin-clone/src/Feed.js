@@ -6,6 +6,7 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions'
 import EventNoteIcon from '@mui/icons-material/EventNote'
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay'
 import InputOption from './InputOption'
+import Post from './Post'
 
 function Feed() {
   return (
@@ -28,7 +29,11 @@ function Feed() {
       </div>
 
       {/* Posts*/}
-      
+      <Post 
+        name='Brian Kurtish'
+        description='This is a post'
+        message = 'Wow this is working so far'
+      />
     </div>
   )
 }
