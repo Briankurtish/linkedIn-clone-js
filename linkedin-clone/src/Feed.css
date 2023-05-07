@@ -40,5 +40,10 @@
 
 .feed__input:hover {
   cursor: pointer;
-  
+
+}
+
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
 }
